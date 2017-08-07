@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-__author__ = '万壑'
+
 
 import cv2 ,time
 from train_model import Model
