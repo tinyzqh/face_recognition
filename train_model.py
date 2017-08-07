@@ -1,5 +1,5 @@
 #-*-coding:utf8-*-
-__author__ = '万壑'
+
 # from dataSet import extract_data
 from dataSet import DataSet
 from keras.models import Sequential,load_model
