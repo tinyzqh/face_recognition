@@ -1,5 +1,5 @@
 #-*-coding:utf8-*-
-__author__ = '万壑'
+
 
 from read_data import read_file
 from sklearn.model_selection import train_test_split
