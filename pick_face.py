@@ -1,5 +1,5 @@
 #-*-coding:utf8-*-
-__author__ = '万壑'
+__author__ = '  '
 
 import os
 import cv2
@@ -11,14 +11,9 @@ def readPicSaveFace(sourcePath,objectPath,*suffix):
     try:
         #读取照片,注意第一个元素是文件名
         resultArray=readAllImg(sourcePath,*suffix)
-
         #对list中图片逐一进行检查,找出其中的人脸然后写到目标文件夹下
-
         count = 1
-        # face_cascade = cv2.CascadeClassifier('E:\openCV\opencv\sources\data\haarcascades\haarcascade_frontalface_alt.xml')
         face_cascade = cv2.CascadeClassifier('/usr/local/lib/python2.7/site-packages/opencv-3.2.0/data/haarcascades/haarcascade_frontalface_alt.xml')
-        # '/home/hezhiqiang/PycharmProjects/tensorflow/view'
-        # '/usr/local/lib/python2.7/site-packages/opencv-3.2.0/data/haarcascades/haarcascade_frontalface_alt.xml'
         for i in resultArray:
             if type(i) != str:
 
@@ -41,11 +36,11 @@ def readPicSaveFace(sourcePath,objectPath,*suffix):
         print 'Already read '+str(count-1)+' Faces to Destination '+objectPath
 
 if __name__ == '__main__':
-     # readPicSaveFace('D:\myProject\pictures\source-jerry','D:\myProject\pictures\picTest','.jpg','.JPG','png','PNG')
+     #/home/hezhiqiang/PycharmProjects/pictures/source-jerry'存放人脸数据库。
      readPicSaveFace('/home/hezhiqiang/PycharmProjects/pictures/source-jerry', '/home/hezhiqiang/PycharmProjects/pictures/picTest', '.jpg', '.JPG', 'png',
                      'PNG')
 
-# '/home/hezhiqiang/PycharmProjects/pictures/picTest'
+
 
 
 
