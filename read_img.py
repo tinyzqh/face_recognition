@@ -1,5 +1,5 @@
 #-*-coding:utf8-*-
-__author__ = '万壑'
+
 
 import os
 import cv2
