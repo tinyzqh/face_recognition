@@ -1,5 +1,5 @@
 #-*-coding:utf8-*-
-__author__ = '  '
+
 
 import os
 import cv2
