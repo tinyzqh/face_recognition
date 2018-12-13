@@ -19,10 +19,8 @@ http://machinelearningmastery.com/setup-python-environment-machine-learning-deep
 * 第二步就是要获得数据训练集，你可以从网上找训练集，也可以用自己或者朋友的照片来做素材（顺手练习下opencv和os），具体操作办法：
 
 * 打开pick_face.py 这个程序，里面有一个函数readPicSaveFace(sourcePath,objectPath,*suffix)，sourcePath是存储图像源的文件夹，objectPath是存储识别出的人脸的文件夹，看这个函数的备注：
-
-前面是你存储源文件图片的文件夹地址，后面那个是你存储剪裁好、处理好的人脸图片的地址，最后是源文件图片的格式（文件后缀）。
-
-通过这个函数你就可以很方便地把各种图片中的人脸给扣出来并保存下来了。像我的人脸就放在了“/home/hezhiqiang/PycharmProjects/pictures/source-jerry”这个文件夹中
+* 前面是你存储源文件图片的文件夹地址，后面那个是你存储剪裁好、处理好的人脸图片的地址，最后是源文件图片的格式（文件后缀）。
+* 通过这个函数你就可以很方便地把各种图片中的人脸给扣出来并保存下来了。像我的人脸就放在了“/home/hezhiqiang/PycharmProjects/pictures/source-jerry”这个文件夹中
 
 ### Step 3 构建模型和进行模型训练
 * 当你建立好你的的数据集之后，应该会有一个dataset的总文件夹，dataset下会分几个文件夹，你想让你的模型识别几张人脸就建立几个子文件夹，每个子文件夹里面应该有至少几十张格式一致的照片（训练素材越多越好）。然后进入train_model.py，输入你的数据集地址，我的数据集地址是 “/home/hezhiqiang/PycharmProjects/pictures/dataset”，文件夹名字以需要显示在人脸框上的文字对应，然后建立模型、读取训练集、训练模型、评估模型，最后存储模型,训练好的模型会存储在Model这个类中写死的一个固定位置中.
