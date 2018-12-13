@@ -1,7 +1,7 @@
 # face_recognition
 在线人脸识别
 
-[参考基础](https://github.com/Hironsan/BossSensor )有一些不同：
+[参考基础](https://github.com/Hironsan/BossSensor ),与其有一些不同：
 * 1.识别人脸的可扩展性。原有的demo只能识别一个人（他老板），新的demo在数据集的扩展性上有修改，理论上可以识别无数人的脸，只要你有足够多的数据；
 * 2.神经网络设计更加简单。新的demo在卷积神经网络的设计上比原有的卷积神经网络更加简单和容易理解，没有搞得那么复杂，更加适合入门；
 * 3.代码结构更清晰。程序设计更加模块化，把能拆分出来的尽量拆分出来，基本上每个文件都可以单独拿出来测试和使用；
@@ -12,9 +12,8 @@
 ### Step 1  环境配置
 * 环境配置这块，网上的资料非常多，总体来说我给大家的建议是：使用集成python环境  Anaconda，里面已经集成了很多有用的安装包比如说numpy、scipy，免去了自己配置的痛苦；通过Anaconda安装新的计算包也非常方便，具体就不再赘述了，网上可以找到很多教程，多百度、多Google。我可以再提醒一句的是，好像Anaconda的theano还有tensorflow的包都有点小问题，需要删了然后重新下载配置，网上也有教程。
 
-简而言之，使用Anaconda，安装好必要的科学计算包：numpy,scipy,sklearn,keras,opencv。贴一个别人的环境配置教程,仅供参考：
-
-http://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda/
+* 简而言之，使用Anaconda，安装好必要的科学计算包：numpy,scipy,sklearn,keras,opencv。贴一个别人的环境配置教程,[仅供参考](
+http://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda)
 
 ### Step 2 获得训练数据集
 * 第二步就是要获得数据训练集，你可以从网上找训练集，也可以用自己或者朋友的照片来做素材（顺手练习下opencv和os），具体操作办法：
